@@ -1,0 +1,12 @@
+package org.niit.Book_backend;
+
+public class App
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" ); 
+        ApplicationContext context=new AnnotationConfigApplicationContext(DBConfiguration.class);
+      
+		
+    }
+}
