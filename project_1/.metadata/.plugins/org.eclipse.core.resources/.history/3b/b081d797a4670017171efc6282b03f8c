@@ -1,0 +1,28 @@
+package com.niit.controllers;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+  
+
+import org.niit.model.Product;
+import org.niit.service.ProductService;
+@Controller
+public class ProductController{
+@Autowired
+private ProductService productservice;
+//http://localhost:8080/Book/getproductform
+@RequestMapping("/getproductform")
+public String getproductForm(Model model)
+{
+//product=new product();
+model.addAttribute("product",new product());
+return "productform";
+}
+@RequestMapping("/saveproduct")
+public String saveProduct(@ModelAttribute(name="product") Product product)
+{
+productservice.saveProduct(product);
+return"success";
+}
+}

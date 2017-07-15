@@ -1,0 +1,42 @@
+package org.niit.service;
+
+import java.util.List;
+
+import org.niit.Dao.ProductDao;
+import org.niit.model.Product;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+@Service
+//productServiceImpl=new ProductServiceImpl()
+@Transactional
+public class ProductServiceImpl implements ProductService {
+	public ProductServiceImpl(){
+		System.out.println("ProductServiceImpl object is created");
+	}
+	@Autowired
+	private ProductDao productDao;
+	public void saveProduct(Product product ){
+		productDao.saveProduct(product);
+	}
+public List<Product> getAllProducts()
+{
+	return productDao.getAllProducts();
+}
+public Product getProductById(int id){
+	return productDao.getProductById(id);
+}
+public void deleteProduct(int id)
+{
+	Product product=getProductById(id);
+	productDao.deleteProduct(product);
+}
+
+public void updateProduct(Product product) {
+	// TODO Auto-generated method stub
+	productDao.editProduct(product);
+}
+
+}
+
+

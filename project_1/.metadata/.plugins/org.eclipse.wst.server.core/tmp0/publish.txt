@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Jul 15 09:45:24 IST 2017
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Puspa\\.m2\\repository\\org\\springframework\\spring-web\\4.3.2.RELEASE\\spring-web-4.3.2.RELEASE.jar=WEB-INF/lib/spring-web-4.3.2.RELEASE.jar
+org.eclipse.jst.j2ee.server\:Book_backend=WEB-INF/lib/Book_backend-0.0.1-SNAPSHOT.jar
