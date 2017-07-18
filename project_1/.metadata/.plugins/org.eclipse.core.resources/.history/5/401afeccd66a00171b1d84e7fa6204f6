@@ -1,0 +1,36 @@
+package org.niit.model;
+
+@Entity
+public class Category
+{
+ @Id
+@GeneratedValue(strategy=GenerationType.AUTO)
+private String CategoryName;
+@OneToMany(mappedBy="category")
+private List<product>products;
+public int getId(){
+return id;
+}
+public void setId(int id) {
+this.id=id;
+}
+public String getCategoryName(){
+return CategoryName;
+}
+public void setCategoryName(String categoryName)
+{
+this.categoryName=categoryName;
+}
+public List<product>getProducts()
+{
+return products;
+}
+public void setProducts(List<Product>products)
+{
+this.Products=products;
+}@Override
+public String to String()
+{
+return this.id+"  "+this.categoryName;
+}
+}

@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.niit.model.Category;
 import org.niit.model.Product;
 @Repository
 public class ProductDaoImpl  implements ProductDao {
@@ -14,11 +15,13 @@ public class ProductDaoImpl  implements ProductDao {
 	}
 	@Autowired
 	private SessionFactory sessionFactory;
-	public void saveProduct(Product product){
+   public void saveProduct(Product product)
+	{
 	Session session=sessionFactory.getCurrentSession();
 	session.save(product);
 	}
-	public List<Product>getAllProducts(){
+	public List<Product>getAllProducts()
+	{
 		Session session=sessionFactory.getCurrentSession();
 			Query query=session.createQuery("from Product");
 		List<Product>products=query.list();
@@ -38,6 +41,14 @@ session.update(product);
 public void deleteProduct(Product product) {
 	Session session=sessionFactory.getCurrentSession();	
 	session.delete(product);
+}
+public List<Category> getAllCategories()
+{
+		Session session=sessionFactory.getCurrentSession();
+			Query query=session.createQuery("from Category");
+		List<Category>categories=query.list();
+		return categories ;
+
 }
 }
 

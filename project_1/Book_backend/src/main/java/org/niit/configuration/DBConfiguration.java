@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-
+import org.niit.model.Category;
 import org.niit.model.Product;
 
 
@@ -39,11 +39,12 @@ public class DBConfiguration {
 		hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
 		hibernateProperties.setProperty("hibernate.show_sql", "true");
 		lsf.addProperties(hibernateProperties);
-		Class classes[]=new Class[]{Product.class};
+		Class classes[]=new Class[]{Product.class,Category.class};
 	    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 	}
 	@Bean
 	public HibernateTransactionManager hibTransManagement(){
 		return new HibernateTransactionManager(sessionFactory());
 	}
+	
 }

@@ -5,10 +5,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-</head>
-<body>
- <!DOCTYPE html>
-<html lang="en">
 <head>
   
   <title>Ravi</title>
@@ -209,16 +205,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">UNIVERSE</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-  
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#about">SERVICES</a></li>
+        <li><a href="#services">ABOUT</a></li>
         <li><a href="http://localhost:8080/Book/getproductform">ADD PRODUCT</a></li>
-        <li><a href="http://localhost:8080/Book//all/product/getallproducts">PRODUCT LIST</a></li>
+        <li><a href="http://localhost:8080/Book/all/product/getallproducts">PRODUCT LIST</a></li>
         <li><a href="http://localhost:8080/Book/home">HOME</a></li>
       </ul>
     </div>

@@ -1,0 +1,22 @@
+package org.niit.Book_backend;
+import org.niit.Dao.ProductDaoImpl;
+import org.niit.configuration.DBConfiguration;
+import org.niit.model.Product;
+import org.niit.service.ProductService;
+import org.niit.service.ProductServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+public class App
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" ); 
+        ApplicationContext context=
+		new AnnotationConfigApplicationContext(DBConfiguration.class,ProductDaoImpl.class);
+        }
+
+
+		
+    }
+
+

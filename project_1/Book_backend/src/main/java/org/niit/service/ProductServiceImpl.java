@@ -1,12 +1,13 @@
 package org.niit.service;
 
 import java.util.List;
-
-import org.niit.Dao.ProductDao;
-import org.niit.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.niit.Dao.ProductDao;
+import org.niit.model.Category;
+import org.niit.model.Product;
+
 @Service
 //productServiceImpl=new ProductServiceImpl()
 @Transactional
@@ -35,6 +36,10 @@ public void deleteProduct(int id)
 public void updateProduct(Product product) {
 	// TODO Auto-generated method stub
 	productDao.editProduct(product);
+}
+public List<Category> getAllCategories()
+{
+return productDao.getAllCategories();
 }
 
 }

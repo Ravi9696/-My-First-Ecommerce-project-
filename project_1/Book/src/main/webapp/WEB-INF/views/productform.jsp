@@ -11,20 +11,40 @@
 
 <body style="background-color:powderblue;">
 <form:form action="saveproduct" method="post" modelAttribute="product">
-<form:hidden path="id"/>
-Enter Product Name<form:input path="productName"/><br><br><br><br><br>
-Enter Price<form:input path="price"/><br><br><br><br><br>
-Enter Quantity<form:input path="quantity"/><br><br><br><br><br>
-Enter Description<form:textarea path="description"/><br><br><br>
-<input type="submit" value="Add product">
+
+<div class="form-group">
+<form:hidden path="id" class="form-control"/>
+</div>
+<div class ="form-group">
+Enter Product Name
+<form:input path="productName" class="form-control"/>
+</div>
+<div class ="form-group">
+Enter Price
+<form:input path="price" class="form-control"/>
+</div>
+<div class ="form-group">
+Enter Quantity
+<form:input path="Quantity" class="form-control"/>
+</div>
+<div class ="form-group">
+Enter Description
+<form:input path="productName" class="form-control"/>
+</div>
+<div class ="form-group">
+Select Category
+<c:forEach items="${categories}" var="c">
+<form:radiobutton path="category.id" value="${c.id}"/>${c.categoryName}
+</c:forEach>
+</div>
+<div class ="form-group">
+<input type="submit" value="Add product"></div>
 </form:form>
+
 </body>
 </html>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
+<br><br><br><br>
 
 
 

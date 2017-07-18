@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ProductController.java&apos; to &apos;org.niit.Book_backend.App.java&apos;&#x0D;&#x0A;- Original project: &apos;Book&apos;&#x0D;&#x0A;- Destination element: &apos;org.niit.Book_backend.App.java&apos;&#x0D;&#x0A;- Original element: &apos;org.niit.controller.ProductController.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Book_backend/src\/main\/java&lt;org.niit.Book_backend{App.java" element1="/src\/main\/java&lt;org.niit.controller{ProductController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1500371213144" units="1" version="1.0"/>
+</session>

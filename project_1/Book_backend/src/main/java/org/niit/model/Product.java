@@ -1,16 +1,26 @@
 package org.niit.model;
+import javax.annotation.Generated;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import javax.persistence.ManyToOne;
 
 @Entity
 
+
+
 public class Product {
-	@Id
+	@Id 
+	@GeneratedValue(strategy=GenerationType.AUTO)
 private int id;
 private String productName;
 private double price;
 private int quantity;
 private String description;
+@ManyToOne
+private Category category;
 public int getId() {
 	return id;
 }
@@ -40,6 +50,12 @@ public String getDescription() {
 }
 public void setDescription(String description) {
 	this.description = description;
+}
+public Category getCategory() {
+	return category;
+}
+public void setCategory(Category category) {
+	this.category = category;
 }
 
 }

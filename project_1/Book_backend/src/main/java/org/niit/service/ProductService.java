@@ -1,12 +1,14 @@
 package org.niit.service;
 import java.util.List;
 
+import org.niit.model.Category;
 import org.niit.model.Product;
 
 public interface ProductService {
 	void saveProduct(Product product);
-	public List<Product> getAllProducts();
+	 List<Product> getAllProducts();
 	Product getProductById(int id);
 	void deleteProduct(int id);
 	void updateProduct(Product product);
+	List<Category> getAllCategories();
 }

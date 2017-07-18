@@ -6,9 +6,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<style>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+</style>
 </head>
 <body>
-<b>List of BIKES</b>
+
+<h1>LIST OF BIKES</h1>
 <div class="container">
 <table Class="table table-striped">
 <thead>
@@ -16,9 +27,16 @@
 <tr><th>Product Name</th><th>price</th></tr>
 </thead>
 <tbody>
-<c:forEach items="${products}" var="p" >
-<tr><td>${p.productName}</td><td>${p.price}
-</td></tr>
+<c:forEach items="${products}" var="p">
+<c:url value="/all/product/viewproduct/${p.id}" var="viewUrl"></c:url>
+<c:url value="/all/product/deleteproduct/${p.id}" var="deleteUrl"></c:url>
+<tr><td><a href="${viewUrl}">${p.productName}</a></td><td>${p.price}</td><td>${p.category.categoryName}</td>
+<td><a href="${viewUrl}"><span class="glyphicon glyphicon-info-sign"></span></a>
+<a href="${deleteUrl}"><span class="glyphicon glyphicon-trash"></span></a>
+<c:url value="/admin/product/geteditform/${p.id}" var="editUrl"></c:url>
+<a href="${editUrl}"><span class="glyphicon glyphicon-pencil"></span></a>
+</td>
+</tr>
 </c:forEach>
 </tbody>
 </table>
