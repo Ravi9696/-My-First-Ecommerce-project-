@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.niit.BIKES_BACKEND.views&apos; to &apos;WEB-INF&apos;&#x0D;&#x0A;- Original project: &apos;BIKES_BACKEND&apos;&#x0D;&#x0A;- Destination element: &apos;WEB-INF&apos;&#x0D;&#x0A;- Original element: &apos;BIKES_BACKEND/src/main/java/com.niit.BIKES_BACKEND.views&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" element1="/src\/main\/java&lt;com.niit.BIKES_BACKEND.views" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1500639807908" target="/BIKES/src/main/webapp/WEB-INF" version="1.0"/>
+</session>
