@@ -15,7 +15,8 @@ public class Category
 @GeneratedValue(strategy=GenerationType.AUTO)
  private int id;
 private String categoryName;
-@OneToMany(mappedBy="category")
+@OneToMany
+(mappedBy="category")
 private List<Product>products;
 public int getId(){
 return id;

@@ -50,7 +50,7 @@ public void deleteProduct(Product product) {
 public List<Category>getAllCategories()
 {
 	Session session=sessionFactory.getCurrentSession();
-		Query query=session.createQuery("from Product");
+		Query query=session.createQuery("from Category");
 	List<Category>categories=query.list();
 	return categories;
 	

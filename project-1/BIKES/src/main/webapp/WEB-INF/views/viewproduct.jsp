@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="backgroundcolor:powderblue">
 
 <b>Details about Bike</b>
 <table>
@@ -22,7 +22,8 @@
 <td>Quantity:</td><td>${product.quantity }</td>
 </tr></table>
 <c:url value="/all/product/getallproducts" var="url1"></c:url>
-<a href="${url1}">Back to product list</a><br>
+<img src="${imageUrl }" height="50" width="50">
+<a href="${url1}"><center><h1>Back to product list</h1></center></a><br>
 
 
 </body>

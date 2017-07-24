@@ -25,12 +25,12 @@ public List<Product> getAllProducts()
 {
 	return productDao.getAllProducts();
 }
-public Product getProductById1(int id){
+public Product getProductById(int id){
 	return productDao.getProductById(id);
 }
 public void deleteProduct(int id)
 {
-	Product product=getProductById1(id);
+	Product product=getProductById(id);
 	productDao.deleteProduct(product);
 }
 
@@ -41,10 +41,7 @@ public void updateProduct(Product product) {
 public List<Category> getAllCategories()
 {
 	return productDao.getAllCategories();
-}
-public Product getProductById(int id) {
-	// TODO Auto-generated method stub
-	return null;
+
 }
 	
 }

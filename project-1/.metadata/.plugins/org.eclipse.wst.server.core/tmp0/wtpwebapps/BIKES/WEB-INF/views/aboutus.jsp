@@ -210,6 +210,8 @@
         <li><a href="#services">SERVICES</a></li>
   
         <li><a href="#contact">CONTACT</a></li>
+         <li><a href="http://localhost:8080/BIKES/home">HOME</a></li> <li><a href="http://localhost:8080/BIKES/getproductform">ADD PRODUCT</a></li>
+          <li><a href="http://localhost:8080/BIKES/all/product/getallproducts">PRODUCT LIST</a></li>
       </ul>
     </div>
   </div>

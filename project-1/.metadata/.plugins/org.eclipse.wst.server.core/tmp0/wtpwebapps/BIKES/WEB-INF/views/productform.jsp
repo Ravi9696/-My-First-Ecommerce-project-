@@ -10,7 +10,7 @@
 </head>
 
 <body style="background-color:powderblue;">
-<form:form action="saveproduct" method="post" modelAttribute="product">
+<form:form action="saveproduct" method="post" modelAttribute="product" enctype="multipart/form-data">
 <table>
 <tr>
 <td>
@@ -35,12 +35,18 @@ Enter Quantity
 Enter Description
 <form:input path="Description" class="form-control"/>
 </div></td></tr>
-<div class="form-group">
-select category
-<c:forEach items="${categories}" var ="c">
+<tr><td><dv class= "form-group">
+upload image
+<input type="file" name="image">
+</dv></td></tr><br>
+<div class ="form-group">
+Select Category
+<c:forEach items="${categories}" var="c">
 <form:radiobutton path="category.id" value="${c.id}"/>${c.categoryName}
-
 </c:forEach>
+</div>
+
+
 <tr>
 <td>
 
