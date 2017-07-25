@@ -32,15 +32,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-globe w3-margin-right"></i>UNIVERSE</a>
-   <a  class="w3-bar-item w3-button w3-mobile">BIKES</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
-   <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-</div>
-
+  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-globe w3-margin-right"></i>UNIVERSE BIKES</a>
+ <p> <center> DRIVE WELL ENJOY THE RIDE</center></p>
+ </div>
 
  
 
@@ -90,29 +84,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <p> We offer the best bikes. ride well and live well.</p>
   </div>
   
-  <div class="w3-row-padding">
-    <div class="w3-col m3">
-      <label><i class="fa fa-currency"></i> Price from</label>
-      <input class="w3-input w3-border" type="number" >
-    </div>
-    <div class="w3-col m3">
-      <label><i class="fa fa-currency"></i> Check Out</label>
-      <input class="w3-input w3-border" type="number" >
-    </div>
-    <div class="w3-col m2">
-      <label><i class="fa fa-bike"></i> BIKE</label>
-      <input class="w3-input w3-border" type="number" placeholder="1">
-    </div>
-    <div class="w3-col m2">
-      <label><i class="fa fa-child"></i> COLOR</label>
-      <input class="w3-input w3-border" type="number" placeholder="0">
-    </div>
-    <div class="w3-col m2">
-      <label><i class="fa fa-search"></i> Search</label>
-      <button class="w3-button w3-block w3-black">Search</button>
-    </div>
-  </div>
-
   <div class="w3-row-padding w3-padding-16">
     <div class="w3-third w3-margin-bottom">
       <img src="resources/images/ravi6.jpg" alt="ravi6" style="width:100%">
@@ -120,8 +91,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <h3>DUKE</h3>
         <h6 class="w3-opacity">From $999999</h6>
         <p>simply superb</P>
-
-        <button class="w3-button w3-block w3-black w3-margin-bottom">BOOK</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -130,9 +99,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <h3>APACHI</h3>
         <h6 class="w3-opacity">From $111449</h6>
         <p>now present trend</p>
-       
-       
-        <button class="w3-button w3-block w3-black w3-margin-bottom">book</button>
+      
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -141,9 +108,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <h3>KARISHMA</h3>
         <h6 class="w3-opacity">From $199</h6>
         <p>classy touch</p>
-        
-        
-        <button class="w3-button w3-block w3-black w3-margin-bottom">BOOK</button>
       </div>
     </div>
   </div>
@@ -166,71 +130,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer helmet, sport dress, glasses etc.</h6>
   </div>
 
-  <div class="w3-container">
-    <h3>Our BIKES</h3>
-    <h6>You can find my showrooms in some places</h6>
-  </div>
   
-  <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="resources/images/ravi11.jpg" alt="ravi11" style="width:100%">
-        <span class="w3-display-bottomleft w3-padding">AMARAVATHI</span>
-      </div>
-    </div>
-    <div class="w3-half">
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="resources/images/ravi10.jpg" alt="ravi10" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">MUMBAI</span>
-          </div>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="resources/images/ravi10.jpg" alt="ravi10" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">DELHI</span>
-          </div>
-        </div>
-      </div>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="resources/images/ravi12.jpg" alt="ravi12" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">SECUDRABAD</span>
-          </div>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="resources/images/ravi11.jpg" alt="ravi11" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">KURNOOL</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card-2 w3-hover-opacity-off" style="margin:32px 0;">
-    <h2>Get the best offers first!</h2>
-    <p>Join our newsletter.</p>
-    <label>E-mail</label>
-    <input class="w3-input w3-border" type="text" placeholder="Your Email address">
-    <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
-  </div>
-
-  <div class="w3-container" id="contact">
-    <h2>Contact</h2>
-    <p>If you have any questions, do not hesitate to ask them.</p>
-    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> chennai , India<br>
-    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +91 9666665515<br>
-    <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: universebikes96@mail.com<br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
 
 <!-- End page content -->
 </div>

@@ -202,16 +202,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">UNIVERSE</a>
-    </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
-  
-        <li><a href="#contact">CONTACT</a></li>
-         <li><a href="http://localhost:8080/BIKES/home">HOME</a></li> <li><a href="http://localhost:8080/BIKES/getproductform">ADD PRODUCT</a></li>
-          <li><a href="http://localhost:8080/BIKES/all/product/getallproducts">PRODUCT LIST</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+        <li><a href="http://localhost:8080/BIKES/home">HOME</a></li>
+        <li><a href="http://localhost:8080/BIKES/getproductform">ADD PRODUCT</a></li>
+        <li><a href="http://localhost:8080/BIKES/all/product/getallproducts">PRODUCT LIST</a></li>
+          <li><a href="http://localhost:8080/BIKES/all/registrationform">SIGN UP</a></li>
+          <li><a href="#">SIGN IN</a></li>
       </ul>
     </div>
   </div>
@@ -292,21 +292,21 @@
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="ravi11.jpg" alt="ravi11" width="400" height="300">
+        <img src="resources/images/ravi11.jpg" alt="ravi11" width="400" height="300">
         <p><strong>CHENNAI</strong></p>
        
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="ravi12.jpg" alt="ravi12" width="400" height="300">
+        <img src="resources/images/ravi12.jpg" alt="ravi12" width="400" height="300">
         <p><strong>KURNOOL</strong></p>
       
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="ravi10.jpg" alt="ravi10" width="400" height="300">
+        <img src="resources/images/ravi10.jpg" alt="ravi10" width="400" height="300">
         <p><strong>DELHI</strong></p>
        
       </div>

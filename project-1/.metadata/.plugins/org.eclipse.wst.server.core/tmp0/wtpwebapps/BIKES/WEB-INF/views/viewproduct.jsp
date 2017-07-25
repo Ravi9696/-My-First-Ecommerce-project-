@@ -12,6 +12,11 @@
 <b>Details about Bike</b>
 <table>
 <tr>
+<td>
+<c:url  value="/resources/images/${product.id }.jpg" var="imageUrl"></c:url>
+<img src="${imageUrl }" height="300" width="300">
+</td></tr>
+<tr>
 <td>product Name:</td><td>${product.productName }</td>
 </tr>
 <tr>
@@ -22,7 +27,6 @@
 <td>Quantity:</td><td>${product.quantity }</td>
 </tr></table>
 <c:url value="/all/product/getallproducts" var="url1"></c:url>
-<img src="${imageUrl }" height="50" width="50">
 <a href="${url1}"><center><h1>Back to product list</h1></center></a><br>
 
 

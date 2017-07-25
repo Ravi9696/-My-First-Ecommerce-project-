@@ -53,6 +53,10 @@
         <li><a href="${url3 }">ADD PRODUCT</a></li>
         <c:url value="/all/product/getallproducts" var="url4"></c:url>
              <li><a href="${url4 }">PRODUCT LIST</a></li>
+             <li class="nav navbar-nav navbar-right">
+             <c:url value="/all/registrationform" var="url5"></c:url>
+        <li><a href="${url5 }"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
   </div>
 </nav>
