@@ -7,11 +7,23 @@
 <head>
 <meta http-equiv="Content-Type" Content="text/html; charset=ISO-8859-1">
 <title>insert</title>
+<style>
+body
+{
+background-image:url('http://www.motorcycle-usa.com/photogallerys/633734197850182879Eslick-action-SBF1.jpg?378220');
+ color: DarkGoldenRod;
+ }
+h3
+{color:Tomato;
+}
+
+
+</style>
 </head>
 
-<body style="background-color:powderblue;">
+<body >
 <form:form action="saveproduct" method="post" modelAttribute="product" enctype="multipart/form-data">
-<table>
+<center><table>
 <tr>
 <td>
 <div class="form-group">
@@ -20,27 +32,28 @@
 <tr>
 <td>
 <div class ="form-group">
-Enter Product Name
+<h3>Enter Product Name</h3>
 <form:input path="productName" class="form-control"/>
 </div></td></tr><tr><td>
 <div class ="form-group">
-Enter Price
+<h3>Enter Price</h3>
 <form:input path="price" class="form-control"/>
 </div></td></tr><tr><td>
 <div class ="form-group">
-Enter Quantity
+<h3>Enter Quantity</h3>
 <form:input path="Quantity" class="form-control"/>
 </div></td></tr><tr><td>
 <div class ="form-group">
-Enter Description
-<form:input path="Description" class="form-control"/>
+<h3>Enter Description</h3>
+<form:textarea path="Description" class="form-control" rows="4" cols="50"/>
 </div></td></tr>
-<tr><td><dv class= "form-group">
-upload image
+<tr><td><div class= "form-group">
+<h3>upload image</h3>
 <input type="file" name="image">
-</dv></td></tr><br>
+</dv></td></tr></table>
+</center>
 <div class ="form-group">
-Select Category
+<h3>Select Category</h3>
 <c:forEach items="${categories}" var="c">
 <form:radiobutton path="category.id" value="${c.id}"/>${c.categoryName}
 </c:forEach>

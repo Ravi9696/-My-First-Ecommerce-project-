@@ -35,7 +35,7 @@
 <tr>
 <td>
 <h1>Enter Description</h1>
-<form:input path="description" class="form-control"/></td></tr>
+<form:textarea path="description" class="form-control" rows="4" cols="50"/></td></tr>
 <div class ="form-group">
 Select Category
 <c:forEach items="${categories}" var="c">

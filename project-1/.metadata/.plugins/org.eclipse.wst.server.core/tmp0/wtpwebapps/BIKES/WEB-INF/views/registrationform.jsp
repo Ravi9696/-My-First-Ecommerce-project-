@@ -8,12 +8,14 @@
 <title>Insert title here</title>
 
 <style>
-body {
-    background-image: url("resources/images/ravi10.jpg");
+body
+{background-image:url('https://1.bp.blogspot.com/-_sh_jz4P5Fg/VvoiIw9f9SI/AAAAAAAAEcg/ju4Ju0jarAA5VM4apOeQx3IFk38kMXJWA/s1600/23.jpg');
 }
 
+
+
 h3{
-color:black;
+color:white;
 }
 </style>
 </head>

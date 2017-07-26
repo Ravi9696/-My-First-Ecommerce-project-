@@ -6,8 +6,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<style>
+body{
+background-image:url('http://s1.picswalls.com/wallpapers/2014/08/16/beautiful-road-backgrounds_07231423_201.jpg');
+}
+</style>
+
 </head>
-<body style="backgroundcolor:powderblue">
+<body >
 
 <b>Details about Bike</b>
 <table>
@@ -27,7 +33,8 @@
 <td>Quantity:</td><td>${product.quantity }</td>
 </tr></table>
 <c:url value="/all/product/getallproducts" var="url1"></c:url>
-<a href="${url1}"><center><h1>Back to product list</h1></center></a><br>
+<a href="${url1}"><center><h1>BACK TO PRODUCT LIST</h1></center></a><br>
+
 
 
 </body>

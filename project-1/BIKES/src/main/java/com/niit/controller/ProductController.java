@@ -26,19 +26,19 @@ import com.niit.service.ProductService;
 public class ProductController{
 @Autowired
 private ProductService productService;
+
 @RequestMapping("/getproductform")
 
 public String getProductForm(Model model){
 	List<Category>categories=productService.getAllCategories();
 	model.addAttribute("categories",categories);
-	
-model.addAttribute("product",new Product());
+	model.addAttribute("product",new Product());
 return "productform";
 
 }
 
 @RequestMapping("/saveproduct")
-public String saveProduct(@Valid @ModelAttribute(name="product") Product product,BindingResult result, Model model)
+public String saveProduct(@Valid @ModelAttribute (name="product")Product product,BindingResult result, Model model)
 {
 	if(result.hasErrors())
 	{List<Category>categories=productService.getAllCategories();
@@ -60,6 +60,7 @@ catch(IOException e){
 }
 return "redirect:/all/product/getallproducts";
 }
+
 @RequestMapping("/all/product/getallproducts")
 public String getAllProducts(Model model)
 {
@@ -75,11 +76,10 @@ Product product=productService.getProductById(id);
 model.addAttribute("product",product);
 return"viewproduct";
 }
-@RequestMapping("/all/product/deleteproduct/{id}")
-public String deleteProductById(@PathVariable int id,Model model)
+@RequestMapping("/admin/product/deleteproduct/{id}")
+public String deleteProductById(@PathVariable int id)
 {
-Product product=productService.getProductById(id);
-model.addAttribute("product",product);
+productService.deleteProduct(id);
 return "redirect:/all/product/getallproducts";
 
 }

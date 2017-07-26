@@ -21,7 +21,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+body,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+h3{ color:Tomato}
 </style>
 
 <body style="background-color:powderblue;">
@@ -33,13 +34,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-large">
   <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-globe w3-margin-right"></i>UNIVERSE BIKES</a>
- <p> <center> DRIVE WELL ENJOY THE RIDE</center></p>
+ <p> <center> <u></u><b>DRIVE WELL ENJOY THE RIDE</b></u></center></p>
+  <center><h3><b>Universe</b> is the world's largest showroom of two Wheelers, Recognized the world over as the symbol of 'UNIVERSE'two wheelers, the 'globe' arrived in India.</h3></center>
+ 
  </div>
+
 
  
 
-<div class="container">
-  <h2>BIKES TRENDING NOW</h2>  
+<div class="container">  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -51,15 +54,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="resources/images/ravi7.jpg" alt="ravi7" style="width:100%;">
+        <img src="resources/images/ravi123.jpg" alt="ravi123" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="resources/images/ravi6.jpg" alt="ravi6" style="width:100%;">
+        <img src="resources/images/ravi100.jpg" alt="ravi100" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="resources/images/ravi6.jpg" alt="ravi6" style="width:100%;">
+        <img src="resources/images/ravi23.jpg" alt="ravi23" style="width:100%;">
       </div>
     </div>
 
@@ -89,7 +92,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <img src="resources/images/ravi6.jpg" alt="ravi6" style="width:100%">
       <div class="w3-container w3-white">
         <h3>DUKE</h3>
-        <h6 class="w3-opacity">From $999999</h6>
+        <h6 class="w3-opacity">From $199999</h6>
         <p>simply superb</P>
       </div>
     </div>
@@ -106,25 +109,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <img src="resources/images/ravi1.JPG" alt="ravi1" style="width:100%">
       <div class="w3-container w3-white">
         <h3>KARISHMA</h3>
-        <h6 class="w3-opacity">From $199</h6>
+        <h6 class="w3-opacity">From $199999</h6>
         <p>classy touch</p>
       </div>
     </div>
   </div>
 
-  <div class="w3-row-padding" id="about">
-    <div class="w3-col l4 m7">
-      <h3>About</h3>
-      <h6>Our Bikes is one of a kind. It is truely amazing.First of all about my bikes,give good mailage.we can do the  </h6>
-    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
-    </div>
-   
   
-  <div class="w3-row w3-large w3-center" style="margin:32px 0">
-    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 423 Some adr, chennai</div>
-    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +91 9963151515</div>
-    <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: ravirkr96@mail.com</div>
-  </div>
+ 
 
   <div class="w3-panel w3-red w3-leftbar w3-padding-32">
     <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer helmet, sport dress, glasses etc.</h6>
@@ -133,7 +125,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   
 
 <!-- End page content -->
-</div>
+
 
 <!-- Footer -->
 <footer class="w3-padding-32 w3-black w3-center w3-margin-top">

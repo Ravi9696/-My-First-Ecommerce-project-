@@ -12,7 +12,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
 @Entity
-
 public class Product {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
