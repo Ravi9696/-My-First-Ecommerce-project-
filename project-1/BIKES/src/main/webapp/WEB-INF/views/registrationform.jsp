@@ -11,6 +11,8 @@
 body
 {background-image:url('https://1.bp.blogspot.com/-_sh_jz4P5Fg/VvoiIw9f9SI/AAAAAAAAEcg/ju4Ju0jarAA5VM4apOeQx3IFk38kMXJWA/s1600/23.jpg');
 }
+h2{
+color:Tomato}
 
 
 
@@ -23,6 +25,9 @@ color:white;
 <c:url value="/all/savecustomer" var="url"></c:url>
 <form:form action="${url }" modelAttribute="customer">
 <table align="center">
+<tr>
+<td>
+<h2><b><u>Enter Your Detailes :</u></b></h2>
 <tr>
 <td><h3>Enter First Name</h3></td>
 <td><form:input  class="form-control" path="firstname"/>
@@ -44,7 +49,8 @@ color:white;
 <form:errors path="email" style="color:red"></form:errors>
 <p style="color=red">${duplicateEmail }</p></td>
 
-</tr>
+</tr><tr><td>
+<h2><b><u>set your uesrname and passward :</u></b></h2></td></tr>
 <tr>
 <td><h3>Enter Username</h3></td>
 <td><form:input class="form-control" path="user.username"/>
@@ -56,6 +62,8 @@ color:white;
 <td><form:input class="form-control" path="user.password"/>
 <form:errors path="user.password" style="color:red"></form:errors></td>
 </tr>
+<tr><td>
+<h2><b><u>Billing Address :</u></b></h2></td></tr>
 <tr>
 <td><h3>Enter Street name</h3></td>
 <td><form:input class="form-control" path="billingAddress.streetname"/>
@@ -85,7 +93,8 @@ color:white;
 <td><h3>Enter Zipcode</h3></td>
 <td><form:input class="form-control" path="billingAddress.zipcode"/>
 <form:errors path="billingAddress.zipcode" style="color:red"></form:errors></td>
-</tr>
+</tr><tr><td>
+<h2><b><u>Shipping Address :</u></b></h2></td></tr>
 <tr>
 <td><h3>Enter Street name</h3></td>
 <td><form:input class="form-control" path="shippingAddress.streetname"/>

@@ -45,7 +45,7 @@
           <span class="glyphicon glyphicon-home"></span> 
         </a></li>
 <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGIRIES
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select by Category
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">BIKE1</a></li>
