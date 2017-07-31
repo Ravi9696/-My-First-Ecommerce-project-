@@ -22,7 +22,7 @@ h3
 </head>
 
 <body >
-<form:form action="saveproduct" method="post" modelAttribute="product" enctype="multipart/form-data">
+<form:form action="/admin/saveproduct" method="post" modelAttribute="product" enctype="multipart/form-data">
 <center><table>
 <tr>
 <td>

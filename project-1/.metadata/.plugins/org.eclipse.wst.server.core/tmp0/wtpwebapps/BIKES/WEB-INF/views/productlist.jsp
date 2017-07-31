@@ -43,15 +43,17 @@ $('.table').DataTable({
 <c:forEach items="${products}" var="p">
 <c:url value="/all/product/viewproduct/${p.id}" var="viewUrl"></c:url>
 <c:url value="/resources/images/${p.id}.jpg" var="imageUrl"></c:url>
-<c:url value="/admin/product/deleteproduct/${p.id}" var="deleteUrl"></c:url><tr>
 <td><img src="${imageUrl }" height="50" width="50"></td>
 <td><a href="${viewUrl}">${p.productName}</a></td><td>${p.price}</td><td>${p.category.categoryName }</td>
 <td><a href="${viewUrl}"><span class="glyphicon glyphicon-info-sign"></span></a>
-<a href="${deleteUrl}"><span class="glyphicon glyphicon-trash"></span></a>
-<c:url value="/admin/product/geteditform/${p.id}" var="editUrl"></c:url>
-<a href="${editUrl}"><span class="glyphicon glyphicon-pencil"></span></a>
+<security:authorize access="hasRole('ROLE_ADMIN')">
+<c:url value="/admin/product/deleteproduct/${p.id }" var="deleteUrl"></c:url>
+<a href="${deleteUrl }"><span class="glyphicon glyphicon-trash"></span></a>
+<c:url value="/admin/product/geteditform/${p.id }" var="editUrl"></c:url>
+<a href="${editUrl }"><span class="glyphicon glyphicon-pencil"></span></a>
+</security:authorize>
+
 </td>
-</tr>
 </c:forEach>
 </tbody>
 </table>

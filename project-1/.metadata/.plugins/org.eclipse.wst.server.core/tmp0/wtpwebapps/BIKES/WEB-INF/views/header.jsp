@@ -55,15 +55,31 @@
         </li>
         <c:url value="/aboutus" var="url2"></c:url>
         <li><a href="${url2 }">ABOUT US</a></li>
-        <c:url value="/getproductform" var="url3"></c:url>
+        <c:url value="/admin/getproductform" var="url3"></c:url>
         <li><a href="${url3 }">ADD PRODUCT</a></li>
         <c:url value="/all/product/getallproducts" var="url4"></c:url>
              <li><a href="${url4 }">PRODUCT LIST</a></li>
              <li class="nav navbar-nav navbar-right">
              <c:url value="/all/registrationform" var="url5"></c:url>
-        <li><a href="${url5 }"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+        <li>
+			<c:if test="${pageContext.request.userPrincipal.name!=null }">
+			<a href="">Welcome ${pageContext.request.userPrincipal.name }</a>
+			</c:if>
+			</li>
+			
+			<c:if test="${pageContext.request.userPrincipal.name==null }">
+			<c:url value="/all/registrationform" var="url5"></c:url>
+			<li><a href="${url5 }"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<c:url value="/login" var="url6"></c:url>
+		    <li><a href="${url6 }">Sign In</a></li>	
+		    </c:if>
+		    <c:url value="/j_spring_security_logout" var="logoutUrl"></c:url>
+		    <c:if test="${pageContext.request.userPrincipal.name!=null }">
+		    <li><a href="${logoutUrl }">logout</a></li>
+		    </c:if>
+			</ul>
+			
+      
   </div>
 </nav>
 

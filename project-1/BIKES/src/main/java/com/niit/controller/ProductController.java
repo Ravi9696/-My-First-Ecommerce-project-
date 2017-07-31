@@ -27,7 +27,7 @@ public class ProductController{
 @Autowired
 private ProductService productService;
 
-@RequestMapping("/getproductform")
+@RequestMapping("/admin/getproductform")
 
 public String getProductForm(Model model){
 	List<Category>categories=productService.getAllCategories();
@@ -37,7 +37,7 @@ return "productform";
 
 }
 
-@RequestMapping("/saveproduct")
+@RequestMapping("/admin/saveproduct")
 public String saveProduct(@Valid @ModelAttribute (name="product")Product product,BindingResult result, Model model)
 {
 	if(result.hasErrors())
