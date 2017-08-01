@@ -1,0 +1,11 @@
+package com.niit.model;
+
+@Entity
+public class CartItem{
+@Id
+@GeneratedValue(streategy=GenerationType=AUTO)
+private int cartItemId;
+@ManyToOne
+@joincolumn(name="cart_id")
+private cart cart;
+

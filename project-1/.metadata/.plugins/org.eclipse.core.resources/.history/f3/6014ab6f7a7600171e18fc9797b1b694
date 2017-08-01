@@ -1,0 +1,42 @@
+package com.niit.Dao;
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.niit.model.CartItem;
+
+@Repository
+public class CartItemDaoImpl implements CartItemDao {
+	@Autowired
+	private SessionFactory sessionFactory;
+	public void addCartItem(CartItem cartItem)
+	{
+	Session session=sessionFactory.getCurrentSession();
+	session.saveOrUpdate(cartItem);}
+	public void removeCartItem(CartItem cartItem)
+	{
+	Session session=sessionFactory.getCurrentSession();
+	CartItem cartItem=(CartItem)session.get(CartItem.class,cartItemId);
+	session.delete()
+	}
+	public void removeALLCartItem(CartItem cartItem)
+	{
+	Session Session=sessionFactory.getCurrentSession();
+	Cart cart=(cart)session.get(cart.class,cartId);
+	List<CartItem>cartItems="cart.getcartItems)
+	for(cartItem cartItem:cartItems){
+
+	session.delete(cartItem);
+	}
+	}
+
+
+
+
+
+
+
+}

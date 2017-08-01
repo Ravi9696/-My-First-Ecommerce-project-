@@ -59,8 +59,22 @@
         <li><a href="${url3 }">ADD PRODUCT</a></li>
         <c:url value="/all/product/getallproducts" var="url4"></c:url>
              <li><a href="${url4 }">PRODUCT LIST</a></li>
-             <li class="nav navbar-nav navbar-right">
-             <c:url value="/all/registrationform" var="url5"></c:url>
+             <li class="dropdown">
+			<a href="" class="dropdown-toggle" data-toggle="dropdown">
+                     Select by Category<b class="caret"></b></a>
+			<ul class="dropdown-menu">
+					<li>
+					<c:forEach items="${categories }" var="c">
+					<c:url value="/all/product/searchbycategory?searchCondition=${c.categoryName }" var="url" ></c:url>
+                <a href="${url }" >${c.categoryName } </a>
+                </c:forEach>
+                <c:url value="/all/product/searchbycategory?searchCondition=All" var="url1">
+                </c:url>
+                 <a href="${url1 }">All</a>
+                </li>
+			</ul>
+			</li>
+			
         <li>
 			<c:if test="${pageContext.request.userPrincipal.name!=null }">
 			<a href="">Welcome ${pageContext.request.userPrincipal.name }</a>
@@ -77,6 +91,8 @@
 		    <c:if test="${pageContext.request.userPrincipal.name!=null }">
 		    <li><a href="${logoutUrl }">logout</a></li>
 		    </c:if>
+		    <li><security:authorize acces="hasRole('ROLE_USER')">
+		    <li><a href="<c:url value="/cart/getcart"></c:url>">cart</a></li></security:authorize></li>
 			</ul>
 			
       

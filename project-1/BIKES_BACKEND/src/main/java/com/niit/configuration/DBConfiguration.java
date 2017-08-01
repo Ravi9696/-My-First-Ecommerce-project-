@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.niit.model.Authorities;
 import com.niit.model.BillingAddress;
 import com.niit.model.Cart;
+import com.niit.model.CartItem;
 import com.niit.model.Category;
 import com.niit.model.Customer;
 import com.niit.model.Product;
@@ -47,7 +48,7 @@ public class DBConfiguration {
 		hibernateProperties.setProperty("hibernate.show_sql", "true");
 		lsf.addProperties(hibernateProperties);
 		Class classes[]=new Class[]{Product.class,Category.class,BillingAddress.class,
-				Authorities.class,Cart.class,ShippingAddress.class,Customer.class,Cart.class,User.class};
+				Authorities.class,Cart.class,ShippingAddress.class,Customer.class,Cart.class,User.class,CartItem.class};
 	    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 	}
 	@Bean

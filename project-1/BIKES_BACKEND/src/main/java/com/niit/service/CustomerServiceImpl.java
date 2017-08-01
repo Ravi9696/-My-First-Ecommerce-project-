@@ -22,6 +22,7 @@ public User validateUsername(String username){
 }
 public Customer validateEmail(String email){
 	return customerDao.validateEmail(email);
+
 }
 }
 
