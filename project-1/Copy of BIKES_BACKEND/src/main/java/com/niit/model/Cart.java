@@ -1,9 +1,14 @@
 package com.niit.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -13,7 +18,9 @@ public class Cart {
 private int id;
 private double grandTotal;
 @OneToOne
+@JoinColumn(name="customer_id")
 private Customer customer;
+@OneToMany(mappedBy="cart",fetch=FetchType.EAGER)
 public int getId() {
 	return id;
 }

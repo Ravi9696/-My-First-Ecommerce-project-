@@ -14,5 +14,9 @@ package com.niit.controller;
 	public String aboutUs(){
 		return "aboutus";
 	}
+	@RequestMapping("/login")
+	public String login(){
+		return "login";
+	
 	}
-
+	}

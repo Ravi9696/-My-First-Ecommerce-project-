@@ -38,13 +38,15 @@
 <fullyQualifiedTypeName name="com.niit.service.CartItemService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.context.SecurityContextHolder"/>
 <fullyQualifiedTypeName name="com.niit.model.User"/>
 <fullyQualifiedTypeName name="com.niit.model.Product"/>
 <fullyQualifiedTypeName name="com.niit.model.Customer"/>
-<fullyQualifiedTypeName name="com.niit.model.Cart"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.niit.model.CartItem"/>
+<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
+<fullyQualifiedTypeName name="com.niit.model.CustomerOrder"/>
+<fullyQualifiedTypeName name="com.niit.model.Cart"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 </qualifiedTypeNameHistroy>

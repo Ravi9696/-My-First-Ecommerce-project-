@@ -22,7 +22,7 @@ public void registerCustomer(Customer customer){
 	
 	
 	Authorities authorities=new Authorities();
-	authorities.setRole("ROLE-USER");
+	authorities.setRole("ROLE_USER");
 	
 	authorities.setUsername(username);
 	Session session=sessionFactory.getCurrentSession();
@@ -47,6 +47,13 @@ public User validateUsername(String username){
 	Customer customer=(Customer)query.uniqueResult();
 	return customer;
 		
+	}
+	public Customer getCustomerByUsername(String username){
+		Session session=sessionFactory.getCurrentSession();
+		Query query=session.createQuery("from Customer where user.username=?");
+		query.setString(0, username);
+		Customer customer=(Customer)query.uniqueResult();
+		return customer;
 	}
 	
 }

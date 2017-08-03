@@ -39,6 +39,6 @@ if(duplicateCustomer!=null){
 	return "registrationform";
 }
 	customerService.registerCustomer(customer);
-	return "home";
+	return "login";
 }
 }

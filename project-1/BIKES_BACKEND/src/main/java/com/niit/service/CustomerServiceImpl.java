@@ -24,5 +24,9 @@ public Customer validateEmail(String email){
 	return customerDao.validateEmail(email);
 
 }
+public Customer getCustomerByUsername(String username) {
+	// TODO Auto-generated method stub
+	return customerDao.getCustomerByUsername(username);
+}
 }
 

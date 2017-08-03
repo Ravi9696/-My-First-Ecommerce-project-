@@ -18,6 +18,7 @@ import com.niit.model.Cart;
 import com.niit.model.CartItem;
 import com.niit.model.Category;
 import com.niit.model.Customer;
+import com.niit.model.CustomerOrder;
 import com.niit.model.Product;
 import com.niit.model.ShippingAddress;
 import com.niit.model.User;
@@ -28,7 +29,7 @@ import com.niit.model.User;
 @EnableTransactionManagement
 public class DBConfiguration {
 	//<bean id="" class="">
-	@Bean
+	@Bean(name="dataSource")
 	public DataSource getDataSource() {
 	    BasicDataSource dataSource = new BasicDataSource();
 	    dataSource.setDriverClassName("org.h2.Driver");
@@ -48,7 +49,8 @@ public class DBConfiguration {
 		hibernateProperties.setProperty("hibernate.show_sql", "true");
 		lsf.addProperties(hibernateProperties);
 		Class classes[]=new Class[]{Product.class,Category.class,BillingAddress.class,
-				Authorities.class,Cart.class,ShippingAddress.class,Customer.class,Cart.class,User.class,CartItem.class};
+				Authorities.class,Cart.class,ShippingAddress.class,Customer.class,Cart.class,
+				User.class,CartItem.class,CustomerOrder.class};
 	    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 	}
 	@Bean

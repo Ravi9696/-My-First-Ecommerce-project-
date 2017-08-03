@@ -39,6 +39,13 @@ public class CartItemDaoImpl implements CartItemDao {
 
 
 	}
+	public Cart getCart(int cartId) {
+		// TODO Auto-generated method stub
+		Session session=sessionFactory.getCurrentSession();
+		Cart cart=(Cart)session.get(Cart.class,cartId);
+		return cart;
+		
+	}
 
 }
 
