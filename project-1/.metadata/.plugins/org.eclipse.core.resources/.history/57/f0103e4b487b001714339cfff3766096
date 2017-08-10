@@ -1,0 +1,8 @@
+package com.niit.service;
+
+import com.niit.model.Pay;
+
+public interface PayService {
+	void savePay(Pay pay);
+
+}

@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
-<fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
@@ -46,7 +45,12 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.niit.model.CartItem"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
-<fullyQualifiedTypeName name="com.niit.model.CustomerOrder"/>
 <fullyQualifiedTypeName name="com.niit.model.Cart"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.niit.model.Payment"/>
+<fullyQualifiedTypeName name="com.niit.model.CustomerOrder"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="com.niit.Dao.PayDao"/>
+<fullyQualifiedTypeName name="com.niit.model.Pay"/>
+<fullyQualifiedTypeName name="com.niit.service.PayService"/>
 </qualifiedTypeNameHistroy>

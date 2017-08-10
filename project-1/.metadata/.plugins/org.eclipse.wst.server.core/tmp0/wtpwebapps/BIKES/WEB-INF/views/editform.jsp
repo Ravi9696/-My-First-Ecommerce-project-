@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body style="background-color:powderblue;">
+<br><br><br>
 <c:url value="/admin/product/editproduct" var="editurl"></c:url>
 <form:form action="${editurl}" modelAttribute="productObj" enctype="multipart/form-data">
 <form:hidden path="id"/>
@@ -36,16 +37,21 @@
 <td>
 <h1>Enter Description</h1>
 <form:textarea path="description" class="form-control" rows="4" cols="50"/></td></tr>
+<tr>
+ <td>
 <div class ="form-group">
-Select Category
+<h3>Select Category</h3>
+<form:select path="category.id">
 <c:forEach items="${categories}" var="c">
-<form:radiobutton path="category.id" value="${c.id}"/>${c.categoryName}
-</c:forEach>
+<form:option value="${c.id}">${c.categoryName}</form:option>
+</c:forEach></form:select>
 </div>
-<tr><td><dv class= "form-group">
+</td></tr>
+
+<tr><td><div class= "form-group">
 upload image
 <input type="file" name="image">
-</dv></td></tr><tr><td>
+</div></td></tr><tr><td>
 <input type="submit" value="Add product">
 </td></tr>
 </table>

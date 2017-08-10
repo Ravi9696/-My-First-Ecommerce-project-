@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ include file="header.jsp"%>
 <html>
@@ -7,8 +5,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 <style>
+h5{ color:red;}
 body
-{background-image:url('http://www.freedwallpapers.com/wp-content/uploads/2017/05/oRFaf7.jpg');
+{background-image:url('http://www.animatedimages.org/data/media/73/animated-motorbike-image-0071.gif');
 }
 
 
@@ -31,13 +30,15 @@ $('.table').DataTable({
 
 </head>
 <body>
+<br><br><br>
 
+<center><h5><b>If you want to find good bike,then pay for it. </b></h5></center>
 <h1>LIST OF BIKES</h1>
 <div class="container">
 <table Class="table table-striped">
 <thead>
 
-<tr><th>IMAGE</th><th>Product Name</th><th>price</th><th>Category</th><th>Action</th></tr>
+<tr><th><h5><b>IMAGE</b></h5></th><th><h5><b>Product Name</b></h5></th><th><h5><b>price</b></h5></th><th><h5><b>Category</b></h5></th><th>Action</th></tr>
 </thead>
 <tbody>
 <c:forEach items="${products}" var="p">
@@ -58,8 +59,15 @@ $('.table').DataTable({
 </c:forEach>
 </tbody>
 </table>
-</div>
+
+
+</div><br><br><br><br><br><br>
 
 </body>
 </html>
 <%@ include file="footer.jsp"%>
+
+
+
+
+

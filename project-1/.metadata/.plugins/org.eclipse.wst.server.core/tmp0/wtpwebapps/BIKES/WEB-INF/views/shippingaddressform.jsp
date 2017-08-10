@@ -16,6 +16,7 @@ color:red}
 
  </style>
 <body>
+<br><br><br>
 <table align="center">
 <c:url value="/cart/order/${cartid}" var="url"></c:url>
 <form:form action="${url }" modelAttribute="shippingAddress" >
@@ -61,8 +62,8 @@ color:red}
 <input type="submit" value="Next">
 </div></td></tr>
 </div>
-</form:form>
+</form:form></table>
+<%@ include file="footer.jsp" %>
+
 </body>
 </html>
-
-<%@ include file="footer.jsp" %>

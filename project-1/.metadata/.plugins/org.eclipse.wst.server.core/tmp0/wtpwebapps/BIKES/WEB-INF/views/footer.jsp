@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+<footer class="w3-padding-25 w3-black w3-center w3-margin-top">
   <h5>Find Us On</h5>
   <div class="w3-xlarge w3-padding-16">
   <a href="https://en-gb.facebook.com/login/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>

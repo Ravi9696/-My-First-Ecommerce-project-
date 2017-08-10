@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<html>
+<body style="baground-image:url('https://thumb1.shutterstock.com/display_pic_with_logo/2659924/305657579/stock-vector-hands-on-laptop-keyboard-with-blank-screen-monitor-for-web-design-banner-and-promotional-305657579.jpg');">
+<h2>Hello World!</h2>
+</body>
+<form method="get" action="sendEmail">
+   	Email<input type="text" name="email"> 
+	First Name   <input type="text" name="first_name">
+	Message Alert  <input type="text" name="message">
+	Message For Us  <input type="text"name="comments"> 
+	<input type="submit" value="send">
+</form>
+
+</html>
+

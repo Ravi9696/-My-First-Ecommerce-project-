@@ -6,9 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body style=" background-image:url('http://www.amyeisenstein.com/wpsys/wp-content/uploads/2010/12/Thank-you-note-handwritten-e1291223482861.jpg');">
 <center><h2>Thank You</h2></center>
 <center><h3>Visit Again!!!</h3></center>
+<center><a href="http://localhost:8080/BIKES/home"><b>back to home</b></a></center>
 
 </body>
 </html>

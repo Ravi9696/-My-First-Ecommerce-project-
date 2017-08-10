@@ -14,9 +14,11 @@ background-image:url('http://s1.picswalls.com/wallpapers/2014/08/16/beautiful-ro
 
 </head>
 <body >
+<br><br><br>
 
 <b>Details about Bike</b>
 <table>
+
 <tr>
 <td>
 <c:url  value="/resources/images/${product.id }.jpg" var="imageUrl"></c:url>
@@ -41,9 +43,8 @@ Out Of Stock
 <form action="${load}">
 Enter Units<input  type="text" name="units"><br>
 
-<button type="submit" 
- style="background:none;border:none;padding:0" class="btn btn-default btn-lg">
-<span class="glyphicon glyphicon-shopping-cart"></span></button>
+<button type="submit"  class="btn btn-info btn-lg">
+<span class="glyphicon glyphicon-shopping-cart"></span> add to cart</button>
 </form>
 </c:if>
 

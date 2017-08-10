@@ -22,46 +22,42 @@ h3
 </head>
 
 <body >
-<form:form action="/admin/saveproduct" method="post" modelAttribute="product" enctype="multipart/form-data">
-<center><table>
-<tr>
-<td>
-<div class="form-group">
-<form:hidden path="id" class="form-control"/>
-</div></td></tr>
-<tr>
-<td>
-<div class ="form-group">
-<h3>Enter Product Name</h3>
-<form:input path="productName" class="form-control"/>
-</div></td></tr><tr><td>
-<div class ="form-group">
-<h3>Enter Price</h3>
-<form:input path="price" class="form-control"/>
-</div></td></tr><tr><td>
-<div class ="form-group">
-<h3>Enter Quantity</h3>
-<form:input path="Quantity" class="form-control"/>
-</div></td></tr><tr><td>
-<div class ="form-group">
-<h3>Enter Description</h3>
-<form:textarea path="Description" class="form-control" rows="4" cols="50"/>
-</div></td></tr>
-<tr><td><div class= "form-group">
-<h3>upload image</h3>
-<input type="file" name="image">
-</dv></td></tr></table>
-</center>
+<br><br><br><br><br><br>
+<c:url value="/admin/saveproduct" var="save"></c:url>
+
+
+<form:form action="${save }" method="post" modelAttribute="product"  enctype="multipart/form-data">
+
+<form:hidden path="id"/>
+<table align="center">
+
+ <tr>
+ <td><h3>Enter Product Name </h3></td><td> <form:input  type="name" class="form-control"  path="productName"/>
+ <form:errors path="productName" style="color:red"></form:errors></td></tr>
+ <tr>
+ <td><h3>Enter Price</h3></td> <td>  <form:input  type="number"  class="form-control" path="price"/>
+ <form:errors path="price" style="color:red"></form:errors></td></tr>
+ <tr>
+ <td>
+ <h3>Enter Quantity </h3></td> <td> <form:input  type="number" class="form-control"  path="quantity"/></td></tr>
+ <tr>
+ <td>
+ <h3>Enter Description </h3></td> <td> <form:textarea  class="form-control"  rows="4" cols="50" path="description"/>
+ <form:errors path="description" style="color:red"></form:errors></td></tr>
+ <tr>
+ <td>
 <div class ="form-group">
 <h3>Select Category</h3>
+<form:select path="category.id">
 <c:forEach items="${categories}" var="c">
-<form:radiobutton path="category.id" value="${c.id}"/>${c.categoryName}
-</c:forEach>
+<form:option value="${c.id}">${c.categoryName}</form:option>
+</c:forEach></form:select>
 </div>
 
 
 <tr>
 <td>
+<h4>up loadimage</h4><input type="file" name="image">
 
 <div class ="form-group">
 <input type="submit" value="Add product"></div></td></tr></table>

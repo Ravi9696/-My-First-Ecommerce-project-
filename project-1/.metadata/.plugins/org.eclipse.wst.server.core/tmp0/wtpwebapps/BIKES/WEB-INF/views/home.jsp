@@ -21,14 +21,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+p.uppercase {
+    text-transform: uppercase;
+}
 body,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 h3{ color:Tomato}
 </style>
 
 <body style="background-color:powderblue;">
+<br><br><br>
 
 
-
+<center><c:if test="${pageContext.request.userPrincipal.name!=null }">
+			<a href=""><h2><b>WELCOME:</b><b><font color="red"><p class="uppercase">${pageContext.request.userPrincipal.name }</p></font></b></h2></a>
+			</c:if></center>
+			
 
 
 <!-- Navigation Bar -->
@@ -63,7 +70,8 @@ h3{ color:Tomato}
     
       <div class="item">
         <img src="resources/images/ravi23.jpg" alt="ravi23" style="width:100%;">
-      </div>
+  </div>
+      
     </div>
 
     <!-- Left and right controls -->
@@ -92,7 +100,7 @@ h3{ color:Tomato}
       <img src="resources/images/ravi6.jpg" alt="ravi6" style="width:100%">
       <div class="w3-container w3-white">
         <h3>DUKE</h3>
-        <h6 class="w3-opacity">From $199999</h6>
+        <h6 class="w3-opacity">From 150000 Rupees</h6>
         <p>simply superb</P>
       </div>
     </div>
@@ -100,7 +108,7 @@ h3{ color:Tomato}
       <img src="resources/images/ravi7.jpg" alt="ravi7" style="width:100%">
       <div class="w3-container w3-white">
         <h3>APACHI</h3>
-        <h6 class="w3-opacity">From $111449</h6>
+        <h6 class="w3-opacity">From 111449 Rupees</h6>
         <p>now present trend</p>
       
       </div>
@@ -109,7 +117,7 @@ h3{ color:Tomato}
       <img src="resources/images/ravi1.JPG" alt="ravi1" style="width:100%">
       <div class="w3-container w3-white">
         <h3>KARISHMA</h3>
-        <h6 class="w3-opacity">From $199999</h6>
+        <h6 class="w3-opacity">From 199999 Rupees</h6>
         <p>classy touch</p>
       </div>
     </div>

@@ -1,0 +1,21 @@
+package com.niit.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
+
+public class Pay {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int payId;
+	public String cardName;
+	public String cardnumber;
+	public double Ccvalue;
+	
+
+	public String passward;
+
+
+}

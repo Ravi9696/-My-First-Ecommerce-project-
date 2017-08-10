@@ -1,0 +1,71 @@
+package com.niit.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
+
+public class Pay {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int payId;
+	public String cardName;
+	public String cardnumber;
+	public double Ccvalue;
+	
+
+	public String passward;
+
+
+	public int getPayId() {
+		return payId;
+	}
+
+
+	public void setPayId(int payId) {
+		this.payId = payId;
+	}
+
+
+	public String getCardName() {
+		return cardName;
+	}
+
+
+	public void setCardName(String cardName) {
+		this.cardName = cardName;
+	}
+
+
+	public String getCardnumber() {
+		return cardnumber;
+	}
+
+
+	public void setCardnumber(String cardnumber) {
+		this.cardnumber = cardnumber;
+	}
+
+
+	public double getCcvalue() {
+		return Ccvalue;
+	}
+
+
+	public void setCcvalue(double ccvalue) {
+		Ccvalue = ccvalue;
+	}
+
+
+	public String getPassward() {
+		return passward;
+	}
+
+
+	public void setPassward(String passward) {
+		this.passward = passward;
+	}
+
+
+}

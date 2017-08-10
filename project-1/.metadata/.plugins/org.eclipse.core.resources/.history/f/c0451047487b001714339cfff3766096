@@ -1,0 +1,14 @@
+package com.niit.service;
+
+import com.niit.Dao.PayDao;
+import com.niit.model.Pay;
+
+public class PayServiceImpl implements PayService{
+	private PayDao payDao;
+
+	public void savePay(Pay pay) {
+		payDao.savePay(pay);
+		
+	}
+
+}

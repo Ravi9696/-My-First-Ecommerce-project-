@@ -1,0 +1,8 @@
+package com.niit.Dao;
+
+import com.niit.model.Product;
+
+public interface PayDao {
+	void savePay(Pay pay);
+
+}
