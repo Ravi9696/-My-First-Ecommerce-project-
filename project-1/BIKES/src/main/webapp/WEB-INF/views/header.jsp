@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
   <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %> 
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
- 
+ <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
     <%@ page isELIgnored="false"%>
    
     
@@ -36,6 +36,7 @@
 
 
 <body>
+
 		<div class="navbar-header">	
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -90,26 +91,27 @@
 			
 			<ul class="nav navbar-nav navbar-right ">
 			
-        <li>
+        <li class="active">
 			<c:if test="${pageContext.request.userPrincipal.name!=null }">
 			<a href="">WELCOME <b><font color="red">${pageContext.request.userPrincipal.name }</font></b></a>
 			</c:if>
 			</li>
-			<c:url value="/contact" var="contact"></c:url>
-        <li><a href="${contact }">CONTACT US</a></li>
+			<c:url value="/contact" var="url11"></c:url>
+        <li><a href="${url11 }">CONTACT US</a></li>
       
         
 			 <c:if test="${pageContext.request.userPrincipal.name==null }">
       <c:url value="/login" var="signin">
       </c:url>
-       <li class="active"><a href="${signin }">Login</a></li>
+       <li><a href="${signin }"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
        <c:url value="/all/registrationform" var="regurl"></c:url>
-      <li class="active"><a href="${regurl }">SIGN UP</a></li>
+      <li><a href="${regurl }"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
        </c:if>
    
 		    <c:url value="/j_spring_security_logout" var="logoutUrl"></c:url>
 		    <c:if test="${pageContext.request.userPrincipal.name!=null }">
-		    <li class="active"><a href="${logoutUrl }">LOGOUT</a></li>
+		    <li><a href="${logoutUrl }">
+		    <span class="glyphicon glyphicon-off"></span>Log Out</a></li>
 		    </c:if>
 		    
 			</ul>
@@ -123,3 +125,38 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

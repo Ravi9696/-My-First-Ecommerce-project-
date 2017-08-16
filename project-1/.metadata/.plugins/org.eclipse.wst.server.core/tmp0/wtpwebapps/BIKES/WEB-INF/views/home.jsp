@@ -30,7 +30,7 @@ h3{ color:Tomato}
 
 <body style="background-color:powderblue;">
 <br><br><br>
-
+ 
 
 <center><c:if test="${pageContext.request.userPrincipal.name!=null }">
 			<a href=""><h2><b>WELCOME:</b><b><font color="red"><p class="uppercase">${pageContext.request.userPrincipal.name }</p></font></b></h2></a>
@@ -96,16 +96,16 @@ h3{ color:Tomato}
   </div>
   
   <div class="w3-row-padding w3-padding-16">
-    <div class="w3-third w3-margin-bottom">
-      <img src="resources/images/ravi6.jpg" alt="ravi6" style="width:100%">
+    <div class="w3-third w3-margin-bottom"><a href="http://localhost:8080/BIKES/all/product/viewproduct/5">
+      <img src="resources/images/ravi34.jpg" alt="ravi34" style="width:100%"></a>
       <div class="w3-container w3-white">
         <h3>DUKE</h3>
         <h6 class="w3-opacity">From 150000 Rupees</h6>
         <p>simply superb</P>
       </div>
     </div>
-    <div class="w3-third w3-margin-bottom">
-      <img src="resources/images/ravi7.jpg" alt="ravi7" style="width:100%">
+    <div class="w3-third w3-margin-bottom"><a href="http://localhost:8080/BIKES/all/product/viewproduct/6">
+      <img src="resources/images/ravi35.jpg" alt="ravi35" style="width:100%"></a>
       <div class="w3-container w3-white">
         <h3>APACHI</h3>
         <h6 class="w3-opacity">From 111449 Rupees</h6>
@@ -113,8 +113,8 @@ h3{ color:Tomato}
       
       </div>
     </div>
-    <div class="w3-third w3-margin-bottom">
-      <img src="resources/images/ravi1.JPG" alt="ravi1" style="width:100%">
+    <div class="w3-third w3-margin-bottom"><a href="http://localhost:8080/BIKES/all/product/viewproduct/8">
+      <img src="resources/images/ducati.jpg" alt="ducati" style="width:80%"></a>
       <div class="w3-container w3-white">
         <h3>KARISHMA</h3>
         <h6 class="w3-opacity">From 199999 Rupees</h6>

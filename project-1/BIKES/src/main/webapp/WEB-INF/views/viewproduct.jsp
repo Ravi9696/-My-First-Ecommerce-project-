@@ -17,7 +17,7 @@ background-image:url('http://s1.picswalls.com/wallpapers/2014/08/16/beautiful-ro
 <br><br><br>
 
 <b>Details about Bike</b>
-<table>
+<table align="center">
 
 <tr>
 <td>

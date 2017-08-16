@@ -7,12 +7,12 @@
 <style>
 h5{ color:red;}
 body
-{background-image:url('http://www.animatedimages.org/data/media/73/animated-motorbike-image-0071.gif');
+{background-image:url('http://www.hdwallpapers.in/thumbs/2017/snow_bike_racing_4k-t2.jpg');
 }
 
 
 h1 {
-    color: white;
+    color: black;
     text-align: center;
 }
 </style>
